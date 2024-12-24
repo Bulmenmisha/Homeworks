@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="button">Нажми меня</label>
+        <div class="text">Кнопка нажата!</div>
+</body>
+</html>
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+
+.toggle {
+    display: none;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #007BFF;
+    background-color: transparent;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    visibility: hidden; 
+}
+
+
+.toggle:checked + .button::after {
+    content: " - кнопка нажата";
+}
+
