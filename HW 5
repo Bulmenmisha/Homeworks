@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">One</div>
+        <div class="grid-item">Two</div>
+        <div class="grid-item">Three</div>
+        <div class="grid-item">Four</div>
+        <div class="grid-item">Five</div>
+        <div class="grid-item">Six</div>
+        <div class="grid-item">Seven</div>
+        <div class="grid-item">Eight</div>
+        <div class="grid-item">Nine</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8c8c8; 
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 200px); 
+    gap: 20px; 
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+.grid-item {
+    background-color: #89c2d9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+    border-radius: 8px; 
+}
