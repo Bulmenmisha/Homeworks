@@ -1,0 +1,36 @@
+//Первое задание
+
+const numbers = [1, 2, 3, 4, 5];
+const calculateSum = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+};
+
+console.log(calculateSum(numbers)); 
+
+
+//Второе задание
+
+const students = [
+    { name: 'Alice', age: 20, course: 'Mathematics' },
+    { name: 'Bob', age: 22, course: 'Physics' },
+    { name: 'Charlie', age: 21, course: 'Computer Science' }
+  ];
+  
+  const displayStudentInfo = (student) => {
+    console.log(`Name: ${student.name}, Age: ${student.age}, Course: ${student.course}`);
+  };
+  
+  displayStudentInfo(students[0]); 
+  displayStudentInfo(students[1]); 
+
+
+
+//Третье задание
+
+  const addNumbers = (num1, num2 = 5) => num1 + num2;
+console.log(addNumbers(10));    
+console.log(addNumbers(10, 3)); 
