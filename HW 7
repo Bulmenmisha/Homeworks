@@ -1,0 +1,60 @@
+// Создайте массив чисел и выведите значения массива в консоль.
+
+const arr = [1, 2, 3, 4, 5, 6]
+  for (let i = 0; i <= arr.length; i++) {
+    console.log(arr[i])
+  }
+
+
+
+
+// Создайте массив произвольных чисел(от 2 до 24) и выведите все числа, которые меньше 20, но больше 8.
+
+const array = [4, 2, 8, 6, 12, 5, 21, 24, 20, 22, 8, 7, 6, 9]
+  for (let i = 0; i <= array.length; i++) {
+    if ( array[i] >= 8 && array[i] <= 20){
+        console.log(array[i])
+    }
+  }
+
+
+
+// Создайте массив чисел и найдите минимальное значение.
+
+const numbers = [124, 56, 78, 93, 85, 29];
+let min = numbers[0]; // Предполагаем, что первый элемент минимальный
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] < min) {
+    min = numbers[i]; // Обновляем минимальное значение
+  }
+}
+
+console.log(`Smalest number is: ${min}`);
+
+
+
+// Создайте массив чисел и обновите значение элемента по индексу.
+
+const nums = [10, 40, 20, 30, 50, 90]
+const indexToUpdate = 5;
+const newValue = 91;
+if ( indexToUpdate >= 0 && indexToUpdate < nums.length) {
+    nums[indexToUpdate] = newValue;
+    console.log(`New array: ${nums}`);
+}
+
+
+
+//Создайте массив слов. Найдите самое длинное слово в массиве.
+
+const words = ["audi", "mercedes", "cherry", "lada", "chevrolet"];
+let longestWord = words[0]; 
+
+for (let i = 1; i < words.length; i++) {
+  if (words[i].length > longestWord.length) {
+    longestWord = words[i]; 
+  }
+}
+
+console.log(`The longest word is: ${longestWord}`);
