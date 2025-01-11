@@ -1,0 +1,76 @@
+const man = {
+    name: 'Mikhail', 
+    age: 28
+}
+console.log(`Имя: ${man.name}`)
+console.log(`Возраст: ${man.age}`)
+
+
+
+const books = [
+    {title: 'Idiot', author: 'Dostoyevski'},
+    {title: 'Mcyri', author: 'Pushkin'},
+    {title: 'Jamila', author: 'Aitmatov'},
+    {title: 'Ampir-V', author: 'Pelevin'},
+]
+console.log("Список книг:");
+books.forEach((book, index) => {
+  console.log(`${index + 1}. Название: "${book.title}", Автор: ${book.author}`);
+});
+
+
+
+
+const rectangle = { a: 10, b: 35 };
+
+rectangle.s = rectangle.a * rectangle.b;  
+rectangle.p = 2 * (rectangle.a + rectangle.b);  
+
+console.log(`Площадь прямоугольника: ${rectangle.s}`);
+console.log(`Периметр прямоугольника: ${rectangle.p}`);
+
+
+
+
+
+const fruits = [
+    { name: "apple", color: "red" },
+    { name: "banana", color: "yellow" },
+    { name: "cherry", color: "red" },
+    { name: "orange", color: "orange" },
+    { name: "strawberry", color: "red" },
+    { name: "kiwi", color: "green" }
+  ];
+  
+  const redFruits = [];
+  
+  for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i].color === "red") {
+      redFruits.push(fruits[i]);
+    }
+  }
+  
+  console.log("Красные фрукты:");
+  redFruits.forEach((fruit, index) => {
+    console.log(`${index + 1}. Название: ${fruit.name}, Цвет: ${fruit.color}`);
+  });
+
+
+
+
+
+
+const playlist = {
+    songs: [
+      { title: "Bata", artist: "Moldonazar", duration: 3.53 },
+      { title: "Magia", artist: "MCHT", duration: 3.20 },
+      { title: "Levitating", artist: "Dua Lipa", duration: 3.24 },
+      { title: "Mistltoe", artist: "Justin Bieber", duration: 2.45 },
+      { title: "Bad Guy", artist: "Billie Eilish", duration: 3.14 }
+    ]
+  };
+  
+  console.log("Список песен:");
+  playlist.songs.forEach((song, index) => {
+    console.log(`${index + 1}. Название: "${song.title}", Исполнитель: ${song.artist}, Длительность: ${song.duration} минут`);
+  });
