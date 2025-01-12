@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="grandchild1"><span>Пункт меню 1</span><img src="./img/search.png" alt="" class="grandchild1-img"></div>
+            <div class="grandchild1"><span>Пункт меню 2</span><img src="./img/chat.png" alt="" class="grandchild1-img"></div>
+            <div class="grandchild1"><span>Пункт меню 3</span><img src="./img/call.png" alt="" class="grandchild1-img"></div>
+            <div class="grandchild1"><span>Пункт меню 4</span><img src="./img/settings.png" alt="" class="grandchild1-img"></div>
+            <div class="grandchild1"><span>Пункт меню 5</span><img src="./img/account_circle.png" alt="" class="grandchild1-img"></div>
+        </div>
+        <div class="child2">
+            <h1>Основной заголовок</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+//Main styles!
+
+.parent {
+    width: 1440px;
+    height: 760px;
+    border: 3px solid rgb(223, 74, 223);
+    top: -255px;
+    left: -238px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.child1 {
+    height: 728px;
+    background-color: #9593FF;
+    width: 25%;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+.child2 {
+    width: 1056px;
+    height: 728px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 16px;
+    gap: 32px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+} 
+.grandchild1 {
+ width: 288px;
+ height: 32px;
+ background-color: #FFFFFF;
+ border-radius: 8px;
+ padding: 10px;
+ gap: 10px;
+}
+
+.grandchild1-img {
+    display: none;
+}
+
+p {
+    font-size: 22px;
+}
+
+
+
+//Media
+
+
+
+@media (max-width: 768px) {
+    .parent {
+        width: 768px;
+        height: 760px;
+        top: -255px;
+        left: 1242px;
+
+    }
+    .child1 {
+        width: 180px;
+        max-height: 760px;
+        padding: 16px;
+        gap: 16px;
+        background-color: #9593FF;
+    }
+    .grandchild1 {
+        max-width: 148px;
+        height: 32px;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 10px;
+        gap: 10px;  
+    }
+
+    
+    .child2 {
+        width: 572px;
+        height: 760px;
+        padding: 16px 0px 0px 0px;
+        gap: 32px;
+        opacity: 0px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+    }
+    h1 {
+        font-family: arial;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32.2px;
+        color: #9593FF; 
+    }
+    p {
+        font-size: 17px; 
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .parent {
+        width: 420px;
+        max-height: 760px;
+        top: -255px;
+        left: 2050px;
+    }
+
+    .child1 {
+        width: 48px;
+        height: 745px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .grandchild1 {
+        display: flex;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .grandchild1-img {
+        display: block;
+        width: 28px;
+        height: 28px;
+    }
+
+    .grandchild1 span {
+        display: none;
+    }
+
+    .child2 {
+        max-height: 760px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    h1 {
+        width: 185px;
+        height: 21px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20.7px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+}
