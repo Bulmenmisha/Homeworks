@@ -1,0 +1,20 @@
+let box = document.getElementById("colorBox");
+
+    box.addEventListener("mouseenter", function () {
+        box.style.backgroundColor = "red";
+    });
+
+    box.addEventListener("mouseleave", function () {
+        box.style.backgroundColor = "blue";
+    });
+
+
+
+
+
+    document.getElementById("colorButton").addEventListener("click", function () {
+        let randomColor = `rgb(${Math.floor(Math.random() * 256)}, 
+                               ${Math.floor(Math.random() * 256)}, 
+                               ${Math.floor(Math.random() * 256)})`;
+        document.getElementById("colorBlock").style.backgroundColor = randomColor;
+    });
