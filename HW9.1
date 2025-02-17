@@ -1,0 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+            let list = document.getElementById("myList");
+            let items = list.getElementsByTagName("li");
+    
+            if (items.length > 3) {
+                let newItem = document.createElement("li");
+                newItem.textContent = "Новый элемент";
+    
+                list.replaceChild(newItem, items[items.length - 1]); // Заменяем последний элемент
+            }
+        });
