@@ -1,0 +1,37 @@
+const people = [
+
+    { name: "Alice", age: 25 },
+
+    { name: "Bob", age: 30 },
+
+    { name: "Charlie", age: 15 }
+
+];
+
+const addStatus = (arr) => {
+    return arr.map(person => ({
+        ...person,
+        статус: person.возраст > 18 ? "взрослый" : "ребенок"
+    }));
+};
+const updatedPeople = addStatus(people);
+console.log(updatedPeople);
+
+
+const movies = [
+
+    { title: "Inception", rating: 4.9 },
+
+    { title: "The Dark Knight", rating: 5.0 },
+
+    { title: "Interstellar", rating: 4.8 },
+
+    { title: "The Matrix", rating: 4.5 }
+
+];
+
+movies.forEach(movie => {
+    if (movie.rating > 4) {
+        console.log(movie.title);
+    }
+});
