@@ -1,0 +1,32 @@
+const movies = [
+     { title: "Inception", year: 2010 },
+     { title: "The Dark Knight", year: 2008 },
+     { title: "Interstellar", year: 2014 },
+     { title: "The Matrix", year: 1999 }
+
+];
+function sortByYear(arr) {
+    return arr.sort((a, b) => a.year - b.year);
+}
+const sortedMovies = sortByYear(movies);
+console.log(sortedMovies);
+
+
+
+
+
+
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+];
+
+function combineNames(arr) {
+    return arr.reduce((acc, person, index) => {
+        return acc + (index > 0 ? ", " : "") + person.name;
+    }, "");
+}
+
+const namesString = combineNames(people);
+console.log(namesString);
