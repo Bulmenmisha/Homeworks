@@ -1,0 +1,17 @@
+const correctLogin = "admin";
+const correctPassword = "12345";
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    let enteredLogin = document.getElementById("login").value;
+    let enteredPassword = document.getElementById("password").value;
+    let message = document.getElementById("message");
+
+    if (enteredLogin === correctLogin && enteredPassword === correctPassword) {
+        message.textContent = "✅ Успешная аутентификация!";
+        message.style.color = "green";
+    } else {
+        message.textContent = "❌ Ошибка: Неверный логин или пароль!";
+        message.style.color = "red";
+    }
+});
