@@ -1,0 +1,10 @@
+const items = [
+    { name: "Vedro", price: 35},
+    { name: "Metla", price: 60},
+    { name: "Tryapka", price: 40},
+    { name: "Voda", price: 0},
+]
+const hasExpensiveItem = items.some(item => {
+    return item.price >= 50;
+})
+console.log(hasExpensiveItem);
