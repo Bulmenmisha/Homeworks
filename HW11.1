@@ -1,0 +1,26 @@
+let count = 0; 
+
+        document.getElementById("clickButton").addEventListener("click", function() {
+            count++; // Увеличиваем счетчик
+            let counterBlock = document.getElementById("counterBlock");
+            counterBlock.textContent = "Количество кликов: " + count;
+
+            
+            if (count % 5 === 0) {
+                counterBlock.style.backgroundColor = getRandomColor();
+            }
+
+            if (count === 10) {
+                document.getElementById("message").textContent = "🎉 Поздравляем! Вы достигли 10 кликов!";
+            }
+        });
+
+        
+        function getRandomColor() {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
