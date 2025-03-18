@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const savedText = localStorage.getItem("note");
+    if (savedText) {
+        document.getElementById("savedNote").textContent = savedText;
+    }
+});
+
+function saveNote() {
+    const noteText = document.getElementById("noteInput").value;
+    localStorage.setItem("note", noteText);
+    document.getElementById("savedNote").textContent = noteText;
+}
