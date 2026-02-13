@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+         <div class="form">
+             <div class="autor">
+                 <h1>Авторизация</h1>
+             </div>
+             <div class="info">
+                <input id="imya" type="text" name="username" placeholder="Логин">
+                <input id="parol" type="password" name="password" placeholder="Пароль">
+             </div>
+             <div class="sub">
+                <button id="voiti" type="submit" >Войти</button>
+                <button id="ochist" type="reset" >Очистить поля</button>
+             </div>
+             <div class="zapomnit">
+                <input type="checkbox" name="subscribe">Запомнить меня
+             </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+.page {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 86, 83);
+}
+
+.form {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(16, 153, 165);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.info {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#parol {
+    width: 330px;
+    height: 35px;
+    border-radius: 8px;
+    margin: 3px;
+} 
+
+#imya {
+    width: 330px;
+    height: 35px;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+#voiti {
+    width: 164px;
+    height: 35px;
+    margin: 3px;
+    border-radius: 8px;
+} 
+
+#ochist {
+    width: 164px;
+    height: 35px;
+    margin: 3px;
+    border-radius: 8px;
+    background-color: rgb(232, 90, 90);
+}
+
+.zapomnit {
+    display: flex;
+    justify-content: center;
+}
