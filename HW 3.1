@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Форма</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Имя</legend>
+        <input type="text" placeholder="Фамилия">
+        <input type="text" placeholder="Имя">
+    </fieldset>
+
+    <div class="flex-row">
+
+        <fieldset>
+            <legend>Пол</legend>
+            <label><input type="radio" name="gender"> Мужской</label><br>
+            <label><input type="radio" name="gender"> Женский</label><br>
+            <label><input type="radio" name="gender"> Не хочу говорить</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Получать рассылку по</legend>
+            <label><input type="checkbox"> Email</label><br>
+            <label><input type="checkbox"> SMS</label>
+        </fieldset>
+
+    </div>
+
+    <div class="button-container">
+        <button type="submit">Отправить</button>
+    </div>
+
+</form>
+
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #dfeff2;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #cfe3e6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+fieldset {
+    border: 2px solid #8aa;
+    padding: 15px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-row fieldset {
+    flex: 1;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
